@@ -27,7 +27,7 @@ public class MPJ_Lab1 {
 
         System.out.println("Program started");
         Data data = new Data(N);
-        data.loadData("test1.txt");
+        data.loadData("test2.txt");
         MD = data.parseMatrix(N);
         MT = data.parseMatrix(N);
         MZ = data.parseMatrix(N);
