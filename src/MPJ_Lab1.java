@@ -20,6 +20,8 @@ public class MPJ_Lab1 {
     static float[] E = new float[N];
 
     public static void main(String[] args) {
+        long start = System.currentTimeMillis();
+
         Mon1 mon1 = new Mon1();
         Mon2 mon2 = new Mon2();
         Mon3 mon3 = new Mon3();
@@ -34,8 +36,6 @@ public class MPJ_Lab1 {
         B = data.parseVector(N);
         D = data.parseVector(N);
         System.out.println("Data successfully parsed");
-
-        long start = System.currentTimeMillis();
 
         for (int i = 0; i < P; i++) {
             int pNum = i;
