@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Arrays;
 
 public class MPJ_Lab1 {
-    static int N = 400; //Matrix and array size.
+    static int N = 1500; //Matrix and array size.
     static int P = 4; //Threads count. Set it so N is multiple of P.
     //Only read data
     static float[][] MD;
@@ -29,7 +29,7 @@ public class MPJ_Lab1 {
 
         System.out.println("Program started");
         Data data = new Data(N);
-        data.loadData("test2.txt");
+        data.loadData("test6.txt");
         MD = data.parseMatrix(N);
         MT = data.parseMatrix(N);
         MZ = data.parseMatrix(N);
@@ -111,17 +111,17 @@ public class MPJ_Lab1 {
                             FileWriter writer2 = new FileWriter("resultE.txt");
                             for (int j = 0; j < N; j++) {
                                 for (int k = 0; k < N; k++) {
-                                    System.out.print(MA[j][k] + " ");
+                                    //System.out.print(MA[j][k] + " ");
                                     writer1.write(MA[j][k] + "\n");
                                 }
-                                System.out.println();
+                                //System.out.println();
                             }
 
                             for (int j = 0; j < N; j++) {
-                                System.out.print(E[j] + " ");
+                                //System.out.print(E[j] + " ");
                                 writer2.write(E[j] + "\n");
                             }
-                            System.out.println();
+                            //System.out.println();
                             writer1.close();
                             writer2.close();
                             System.out.println("Data successfully saved on disk");
